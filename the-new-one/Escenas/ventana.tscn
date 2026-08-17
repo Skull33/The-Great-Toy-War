@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://blgxcrmegw7w0"]
+
+[ext_resource type="Texture2D" uid="uid://cqdyc5yatnpe0" path="res://Texturas/ventana.png" id="1_hgdav"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
+size = Vector3(1.2492676, 1.260498, 0.14501953)
+
+[node name="ventana" type="Node3D" unique_id=917595464]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=208119556]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+texture_filter = 0
+render_priority = 1
+texture = ExtResource("1_hgdav")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sprite3D" unique_id=714884480]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D/StaticBody3D" unique_id=979467606]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.0032043457, -0.0013122559, 0.0018920898)
+shape = SubResource("BoxShape3D_5h11f")

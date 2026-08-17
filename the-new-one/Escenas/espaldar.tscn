@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cuttlbiwpv8g2"]
+
+[ext_resource type="Texture2D" uid="uid://cjlcyaplytk7v" path="res://Sprites/espaldar.png" id="1_f7y0n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
+size = Vector3(1.2299805, 0.63720703, 0.10107422)
+
+[node name="espaldar" type="Node3D" unique_id=140693601]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1823216295]
+texture_filter = 0
+render_priority = 1
+texture = ExtResource("1_f7y0n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sprite3D" unique_id=1868918372]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D/StaticBody3D" unique_id=1193581245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00024414063, -0.006591797, -0.03149414)
+shape = SubResource("BoxShape3D_5h11f")

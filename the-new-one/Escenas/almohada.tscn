@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bjhvyhvuhuw4q"]
+
+[ext_resource type="Texture2D" uid="uid://cpjigorot1pjp" path="res://Sprites/almohada.png" id="1_nwkmq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
+size = Vector3(0.61694336, 0.35498047, 0.08618164)
+
+[node name="almohada" type="Node3D" unique_id=536255366]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=66630596]
+texture_filter = 0
+render_priority = 2
+texture = ExtResource("1_nwkmq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sprite3D" unique_id=46054255]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D/StaticBody3D" unique_id=1158697710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010375977, 0.004638672, 0.00061035156)
+shape = SubResource("BoxShape3D_5h11f")
